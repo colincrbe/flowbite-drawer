@@ -39,6 +39,7 @@ const turboStreamLoadEvents = new Events('turbo:after-stream-render', [
 ]);
 turboStreamLoadEvents.init();
 
+/*
 export default {
     Accordion,
     Carousel,
@@ -55,4 +56,9 @@ export default {
     CopyClipboard,
     Datepicker,
     Events,
+};
+*/
+
+export default {
+    Drawer,
 };
