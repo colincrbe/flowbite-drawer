@@ -39,9 +39,7 @@ const events = new Events('load', [
     initDatepickers,
 ]);
 */
-const events = new Events('load', [
-    initDrawers,
-]);
+const events = new Events('load', [initDrawers]);
 events.init();
 
 // export all components
