@@ -69,7 +69,8 @@
         "clean:lib": "shx rm -rf lib",
         "clean:dist": "shx rm -rf dist",
         "build:npm": "run-s clean:lib build:lib clean:dist build:dist",
-        "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore"
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+        "prepare": "npm run build:npm"
     },
     "devDependencies": {
         "@babel/core": "^7.14.8",
