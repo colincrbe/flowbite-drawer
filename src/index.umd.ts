@@ -19,9 +19,8 @@ import InputCounter, { initInputCounters } from './components/input-counter';
 import CopyClipboard, { initCopyClipboards } from './components/clipboard';
 import Datepicker, { initDatepickers } from './components/datepicker';
 */
-import './components/index';
+// import './components/index';
 import Events from './dom/events';
-
 
 /*
 const events = new Events('load', [
@@ -41,9 +40,7 @@ const events = new Events('load', [
     initDatepickers,
 ]);
 */
-const events = new Events('load', [
-    initDrawers,
-]);
+const events = new Events('load', [initDrawers]);
 
 events.init();
 
@@ -66,7 +63,6 @@ export default {
     Events,
 };
 */
-
 
 export default {
     Drawer,
