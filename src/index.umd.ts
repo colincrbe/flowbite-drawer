@@ -22,6 +22,8 @@ import Datepicker, { initDatepickers } from './components/datepicker';
 // import './components/index';
 import Events from './dom/events';
 
+initDrawers();
+
 /*
 const events = new Events('load', [
     initAccordions,
@@ -40,7 +42,7 @@ const events = new Events('load', [
     initDatepickers,
 ]);
 */
-const events = new Events('load', [initDrawers]);
+const events = new Events('DOMContentLoaded', [initDrawers]);
 
 events.init();
 

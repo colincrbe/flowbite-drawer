@@ -20,6 +20,8 @@ import Datepicker, { initDatepickers } from './components/datepicker';
 // import './components/index';
 import Events from './dom/events';
 
+initDrawers();
+
 /*
 const liveViewLoadEvents = new Events('phx:page-loading-stop', [
     initAccordions,
@@ -59,7 +61,7 @@ const regularViewLoadEvents = new Events('load', [
     initDatepickers,
 ]);
 */
-const regularViewLoadEvents = new Events('load', [initDrawers]);
+const regularViewLoadEvents = new Events('DOMContentLoaded', [initDrawers]);
 regularViewLoadEvents.init();
 
 /*
